@@ -19,7 +19,7 @@ app.add_middleware(
 )
 
 # Configurações - CONSIDERE USAR VARIÁVEIS DE AMBIENTE PARA SEGURANÇA
-DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN", "MTQyNTA2NjI5ODY0NzI0ODkwNw.Gkf9KZ.ebSGU7UQR-rNtfStGc939AeT5kTIC6SRaj8Op0")
+DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 DISCORD_CHANNELS = [
     "1430330769456365578",
     "1418386444610830477", 
@@ -678,4 +678,5 @@ if __name__ == "__main__":
         host="0.0.0.0",
         port=int(os.getenv("PORT", 8000)),  # Usar PORT variável para compatibilidade com serviços cloud
         log_level="info"
+
     )
