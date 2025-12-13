@@ -21,10 +21,9 @@ app.add_middleware(
 # Configurações - CONSIDERE USAR VARIÁVEIS DE AMBIENTE PARA SEGURANÇA
 DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 DISCORD_CHANNELS = [
-    "1430330769456365578",
-    "1418386444610830477", 
-    "1418386781543338097",
-    "1430965847056322750"
+    "1449174472396636304",
+    "1449198014475272343", 
+    "1449174820158963803"
 ]
 
 class BrainrotNotification(BaseModel):
@@ -680,3 +679,4 @@ if __name__ == "__main__":
         log_level="info"
 
     )
+
